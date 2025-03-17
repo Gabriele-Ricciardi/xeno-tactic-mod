@@ -3,6 +3,8 @@ This is a mod of the original "Xeno Tactic", a flash game made by Nowe Reginald 
 
 I created this mod to fix a few bugs and add many Quality of Life features.
 
+You can play this mod [here on GitHub](https://gabriele-ricciardi.github.io/xeno-tactic-mod/).
+
 ## Bug fixes
 
 1. Plasma turret button: the button was unlocked at 25 gold, now it unlocks correctly at 15 gold.
