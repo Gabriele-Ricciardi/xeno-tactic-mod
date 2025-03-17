@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>XENO TACTIC MOD</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+  </head>
+  <body>
+    <div id="root">
+      <div id="player-container">         
+  </div>
+
+  <script>
+    window.RufflePlayer = window.RufflePlayer = {
+      config: {
+          autoplay: "on",
+          wmode: "transparent",
+          scale: "showAll",
+          unmuteOverlay: "hidden",
+          forceScale: true
+          }
+    };
+    window.addEventListener("load", (event) => {
+        const ruffle = window.RufflePlayer.newest();
+        const player = ruffle.createPlayer();
+        const container = document.getElementById("player-container");
+        container.appendChild(player);
+        player.style.width = "100vw"; 
+        player.style.height = "100vh";
+        player.ruffle().load("xenotactic_mod.swf");
+    });
+  </script>
+  <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+  </body>
+</html>
